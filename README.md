@@ -10,7 +10,7 @@ Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https
 curl -s https://ghproxy.com/https://raw.githubusercontent.com/zhengr/docker-odoo-14/master/run.sh | sudo bash -s odoo-one 10014 20014
 ```
 
-to set up first Odoo instance @ `localhost:10014` (default master password: `minhng.info`)
+to set up first Odoo instance @ `localhost:10014` (default master password: `######`)
 
 and
 
@@ -18,7 +18,7 @@ and
 curl -s https://ghproxy.com/https://raw.githubusercontent.com/zhengr/docker-odoo-14/master/run.sh | sudo bash -s odoo-two 11014 21014
 ```
 
-to set up another Odoo instance @ `localhost:11014` (default master password: `minhng.info`)
+to set up another Odoo instance @ `localhost:11014` (default master password: `######`)
 
 Some arguments:
 * First argument (**odoo-one**): Odoo deploy folder
@@ -38,10 +38,6 @@ If you need to remove Odoo deploy folder:
 $ sudo rm -R odoo-one
 ```
 
-如果需要变更为企业版，需要手动进入Docker容器执行命令，将企业版addons进行安装： 
-``` bash
-$ mv /extra-addons/* /mnt/extra-addons/
-```
 
 # Usage
 
