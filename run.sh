@@ -3,7 +3,7 @@ DESTINATION=$1
 PORT=$2
 CHAT=$3
 # clone Odoo directory
-git clone --depth=1 git@codeup.aliyun.com:63eb904d9dee9309492bd956/docker-odoo-14.git $DESTINATION
+git clone --depth=1 https://codeup.aliyun.com/63eb904d9dee9309492bd956/docker-odoo-14.git $DESTINATION
 rm -rf $DESTINATION/.git
 # set permission
 mkdir -p $DESTINATION/postgresql
